@@ -1,0 +1,600 @@
+---
+title: example
+layout: 'base.njk'
+---
+
+  <section class="theflow">
+    <div class="theflow-bg-image"></div>
+    <div class="container">
+        <div class="wrapper">
+            <span class="index">Welcome to Buna Beauty Center</span>
+            <h1 class="section-title">Body Care,
+                For <span class="you" style="font-style: italic;">You</span>.</h1>
+            <p>Specializing in nails, waxing, and beauty care,
+                we’re here to help you look and feel your best.</p>
+            <a class="btn btn--primary" href="/index#contact">Contact Us</a>
+        </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+        <div class="features-wrapper w3-section">
+            <div class="feature-box w3-animate-right">
+                <div class="feature-box-content">
+                    <div class="icon-feature"><img src="/assets/expertise.svg" alt=""></div>
+                    <div class="content-feature">
+                    <span class="content-title">Proven Expertise</span>
+                    <span class="content-description">With over 25 years in the industry</span>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-box w3-animate-right">
+                <div class="feature-box-content">
+                    <div class="icon-feature"><img src="/assets/trendsetters-icon.svg" alt=""></div>
+                    <div class="content-feature">
+                        <span class="content-title">Trendsetters</span>
+                        <span class="content-description">Dedicated to staying at the cutting edge.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-box w3-animate-right">
+                <div class="feature-box-content">
+                    <div class="icon-feature"><img src="/assets/touch-icon.svg" alt=""></div>
+                    <div class="content-feature">
+                        <span class="content-title">Personal Touch</span>
+                        <span class="content-description">We began 15 years ago with our first shop.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="services pad">
+    <div class="services-wrapper">
+      <div class="container-content">
+        <h2 id="tabs-title" class="section-title">Check Our Beauty Services</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nibh urna, mattis
+          eget metus eu, pharetra tincidunt sem. Pellentesque non velit quis erat laoreet
+          condimentum. Phasellus tempor justo quis dictum fermentum.</p>
+      </div>
+      <div class="tabs-container">
+        <ul aria-labelledby="tabs-title">
+        <li><a id="tab-1" class="tabs" href="#advertising"> Waxing </a></li>
+        <li><a id="tab-2" class="tabs" href="#social-media"> Manicure </a></li>
+        <li><a id="tab-3" class="tabs" href="#content-marketing"> Pedicure </a></li>
+        <li><a id="tab-4" class="tabs" href="#email"> Face Treatment </a></li>
+        </ul>
+
+        <div class="tabs__panels flow">
+          <div id="advertising" aria-labelledby="tab-1">
+            <ul class="cards-wrapper">
+              {%- for post in collections.featured -%}
+                {% include 'article-snippet.njk' %}
+              {%- endfor %}
+            </ul>
+          </div>
+          <div id="social-media" aria-labelledby="tab-2">
+            <ul class="cards-wrapper">
+              {%- for post in collections.manicure -%}
+                {% include 'article-snippet.njk' %}
+              {%- endfor %}
+            </ul>
+          </div>
+          <div id="content-marketing" aria-labelledby="tab-3">
+            <ul class="cards-wrapper">
+              {%- for post in collections.pedicure -%}
+                {% include 'article-snippet.njk' %}
+              {%- endfor %}
+            </ul>
+          </div>
+          <div id="email" aria-labelledby="tab-4">
+            <ul class="cards-wrapper">
+              {%- for post in collections.facetreatment -%}
+                {% include 'article-snippet.njk' %}
+              {%- endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="services-button">
+        <a href="/services" class="btn btn--primary">View All Services</a>
+      </div>
+  </section>
+  <section class="about">
+    <div class="about-wrapper col">
+      <div class="about-pic">
+        <div class="about-image"><img src="/assets/about-beauty-center.jpg" alt=""></div>
+        <div class="about-stats">
+                    <div class="stats-wrapper w3-section">
+                        <div class="stats-box w3-animate-top">
+                            <div class="inner-stats">
+                              <div class="inner-box-stats">
+                                <span class="value">17 <sup class="value">+</sup></span></h2>
+                                <span class="label">Services</span></p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="stats-box w3-animate-top">
+                            <div class="inner-stats">
+                              <div class="inner-box-stats">
+                                <span class="value">150 <sup class="value">+</sup></span></h2>
+                                <span class="label">Nail Styles</span></p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="stats-box w3-animate-top">
+                            <div class="inner-stats">
+                              <div class="inner-box-stats">
+                                <span class="value">25 <sup class="value">+</sup></span></h2>
+                                <span class="label">Years of Experience</span></p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="about-bg">
+        <div class="about-content">
+          <div class="content-bubble">
+                        <div class="content-wrapper">
+                            <div class="icon-content">
+                                <img src="/assets/beauty-spa.svg" alt="">
+                            </div>
+                            <h2 class="section-title">Explore Our Beauty 
+                            Center</h2>
+                            <p>We are a dedicated team of entrepreneurs with over 25 years of combined experience in the industry. Our journey began 15 years ago when we opened our own    shop,  and  since then, we've been passionately committed to staying ahead of trends and continually evolving our services.</p>
+                            <a href="" class="btn btn--secondary">Learn More</a>
+                        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="why-choose pad">
+    <div class="container">
+        <div class="container-content">
+            <h2 class="section-title">Why Choose Buna Beauty Center</h2>
+            <p>At our beauty salon, we specialize in both nails and waxing, offering top-tier
+               services in a place that feels like your second home. Our experienced team
+              provides exceptional care, ensuring you leave feeling refreshed and confident.</p>
+        </div>
+        <div class="mirror-wrapper">
+            <div class="card-mirror">
+                <div class="mirror-thubnail"><img src="/assets/expertise.jpg" alt=""></div>
+                <div class="mirror-content">
+                    <h3 class="section-title">Rooted in expertise</h3>
+                    <p>Skilled professionals making you look and feel your best</p>
+                </div>
+            </div>
+            <div class="card-mirror">
+                <div class="mirror-thubnail"><img src="/assets/satisfaction.jpg" alt=""></div>
+                <div class="mirror-content">
+                    <h3 class="section-title">Rooted in expertise</h3>
+                    <p>Skilled professionals making you look and feel your best</p>
+                </div>
+            </div>
+            <div class="card-mirror">
+                <div class="mirror-thubnail"><img src="/assets/atmosphere.jpg" alt=""></div>
+                <div class="mirror-content">
+                    <h3 class="section-title">Rooted in expertise</h3>
+                    <p>Skilled professionals making you look and feel your best</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="nails-gallery">
+    <div class="container">
+        <div class="wrapper-nails-gallery">
+            <div class="content-nails-gallery">
+                <div class="inner-content-nails">
+                    <div class="inner-content-gallery">
+                        <h2 class="section-title">Before & After
+                            Nails Gallery</h2>
+                        <p>Explore our gallery to see real client transformations and our beauty
+                            treatments in action. From facials to lash lifts, view our work and find
+                            inspiration for your next visit.</p>
+                        <a href="" class="btn btn--secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-nails-gallery">
+                <img src="/assets/nails-galelry.jpg" alt="">
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="testimonials pad">
+    <div class="wrapper-testimonials">
+      <div class="container-content">
+        <h2 class="section-title">Check Our Testimonials</h2>
+        <i><svg width="123" height="25" viewBox="0 0 123 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.1629 2.83447L12.5183 10.2783L20.3257 10.2183L13.9736 14.7586L16.4436 22.1655L10.1629 17.5276L3.88219 22.1655L6.35141 14.7586L0 10.2183L7.80742 10.2783L10.1629 2.83447Z" fill="#5A3F18"/><path d="M35.8315 2.83447L38.1869 10.2783L45.9943 10.2183L39.6421 14.7586L42.1121 22.1655L35.8315 17.5276L29.5508 22.1655L32.02 14.7586L25.6686 10.2183L33.476 10.2783L35.8315 2.83447Z" fill="#5A3F18"/><path d="M61.5 2.83447L63.8555 10.2783L71.6629 10.2183L65.3107 14.7586L67.7807 22.1655L61.5 17.5276L55.2193 22.1655L57.6893 14.7586L51.3372 10.2183L59.1446 10.2783L61.5 2.83447Z" fill="#5A3F18"/><path d="M87.1686 2.83447L89.5241 10.2783L97.3315 10.2183L90.9801 14.7586L93.4493 22.1655L87.1686 17.5276L80.8879 22.1655L83.3579 14.7586L77.0057 10.2183L84.8132 10.2783L87.1686 2.83447Z" fill="#5A3F18"/><path d="M112.837 2.83447L115.193 10.2783L123 10.2183L116.649 14.7586L119.118 22.1655L112.837 17.5276L106.556 22.1655L109.026 14.7586L102.674 10.2183L110.482 10.2783L112.837 2.83447Z" fill="#5A3F18"/></svg></i>
+      </div>
+      <div class="testimonials-wrapper">
+        <div class="clients-card">
+          <div class="clients-inner-card">
+                    <div class="inner-card">
+                        <div class="clients-pfp">
+                            <img src="/assets/persona-artah.jpg" alt="">
+                        </div>
+                        <div class="clients-heading">
+                            <h3 class="section-title">Arta H.</h3>
+                            <ul class="service">
+                                <li>
+                                    <img src="/assets/icon-nails.svg" alt="">
+                                    Nails
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clients-brief">
+                        <p>I always leave this salon feeling amazing! The team is so professional and friendly, and the cozy atmosphere makes every visit a treat. </p>
+                        </div>
+                        <div class="rating-system">
+                        <i><svg width="123" height="26" viewBox="0 0 123 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.1629 3.48486L12.5183 10.9287L20.3257 10.8687L13.9736 15.4089L16.4436 22.8158L10.1629 18.178L3.88219 22.8158L6.35141 15.4089L0 10.8687L7.80742 10.9287L10.1629 3.48486Z" fill="#5A3F18"/>
+                            <path d="M35.8313 3.48486L38.1868 10.9287L45.9942 10.8687L39.642 15.4089L42.112 22.8158L35.8313 18.178L29.5506 22.8158L32.0199 15.4089L25.6685 10.8687L33.4759 10.9287L35.8313 3.48486Z" fill="#5A3F18"/>
+                            <path d="M61.5 3.48486L63.8555 10.9287L71.6629 10.8687L65.3107 15.4089L67.7807 22.8158L61.5 18.178L55.2193 22.8158L57.6893 15.4089L51.3372 10.8687L59.1446 10.9287L61.5 3.48486Z" fill="#5A3F18"/>
+                            <path d="M87.1685 3.48486L89.5239 10.9287L97.3314 10.8687L90.98 15.4089L93.4492 22.8158L87.1685 18.178L80.8878 22.8158L83.3578 15.4089L77.0056 10.8687L84.813 10.9287L87.1685 3.48486Z" fill="#5A3F18"/>
+                            <path d="M112.837 3.48486L115.193 10.9287L123 10.8687L116.649 15.4089L119.118 22.8158L112.837 18.178L106.557 22.8158L109.026 15.4089L102.674 10.8687L110.482 10.9287L112.837 3.48486Z" fill="#5A3F18"/>
+                            </svg>
+                            </i>
+                        </div>
+                    </div>
+          </div>
+        </div>
+        <div class="clients-card">
+          <div class="clients-inner-card">
+                    <div class="inner-card">
+                        <div class="clients-pfp">
+                            <img src="/assets/persona-lorenat.jpg" alt="">
+                        </div>
+                        <div class="clients-heading">
+                            <h3 class="section-title">Lorena T.</h3>
+                            <ul class="service">
+                                <li>
+                                    <img src="/assets/icon-waxing.svg" alt="">
+                                    Waxing
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clients-brief">
+                        <p>They always listen to me and deliver perfect results. The waxing is gentle and thorough—I wouldn’t go anywhere else! </p>
+                        </div>
+                        <div class="rating-system">
+                        <i><svg width="123" height="26" viewBox="0 0 123 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.1629 3.48486L12.5183 10.9287L20.3257 10.8687L13.9736 15.4089L16.4436 22.8158L10.1629 18.178L3.88219 22.8158L6.35141 15.4089L0 10.8687L7.80742 10.9287L10.1629 3.48486Z" fill="#5A3F18"/>
+                            <path d="M35.8313 3.48486L38.1868 10.9287L45.9942 10.8687L39.642 15.4089L42.112 22.8158L35.8313 18.178L29.5506 22.8158L32.0199 15.4089L25.6685 10.8687L33.4759 10.9287L35.8313 3.48486Z" fill="#5A3F18"/>
+                            <path d="M61.5 3.48486L63.8555 10.9287L71.6629 10.8687L65.3107 15.4089L67.7807 22.8158L61.5 18.178L55.2193 22.8158L57.6893 15.4089L51.3372 10.8687L59.1446 10.9287L61.5 3.48486Z" fill="#5A3F18"/>
+                            <path d="M87.1685 3.48486L89.5239 10.9287L97.3314 10.8687L90.98 15.4089L93.4492 22.8158L87.1685 18.178L80.8878 22.8158L83.3578 15.4089L77.0056 10.8687L84.813 10.9287L87.1685 3.48486Z" fill="#5A3F18"/>
+                            <path d="M112.837 3.48486L115.193 10.9287L123 10.8687L116.649 15.4089L119.118 22.8158L112.837 18.178L106.557 22.8158L109.026 15.4089L102.674 10.8687L110.482 10.9287L112.837 3.48486Z" fill="#5A3F18"/>
+                            </svg>
+                            </i>
+                        </div>
+                    </div>
+          </div>
+        </div>
+        <div class="clients-card">
+          <div class="clients-inner-card">
+                    <div class="inner-card">
+                        <div class="clients-pfp">
+                            <img src="/assets/persona-dritak.jpg" alt="">
+                        </div>
+                        <div class="clients-heading">
+                            <h3 class="section-title">Drita K.</h3>
+                            <ul class="service">
+                                <li>
+                                    <img src="/assets/icon-skin-care.svg" alt="">
+                                    Skin Care
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clients-brief">
+                        <p>I love the care they put into every detail. The staff is welcoming, and their work is unmatched. I always leave feeling confident! </p>
+                        </div>
+                        <div class="rating-system">
+                        <i><svg width="123" height="26" viewBox="0 0 123 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.1629 3.48486L12.5183 10.9287L20.3257 10.8687L13.9736 15.4089L16.4436 22.8158L10.1629 18.178L3.88219 22.8158L6.35141 15.4089L0 10.8687L7.80742 10.9287L10.1629 3.48486Z" fill="#5A3F18"/>
+                            <path d="M35.8313 3.48486L38.1868 10.9287L45.9942 10.8687L39.642 15.4089L42.112 22.8158L35.8313 18.178L29.5506 22.8158L32.0199 15.4089L25.6685 10.8687L33.4759 10.9287L35.8313 3.48486Z" fill="#5A3F18"/>
+                            <path d="M61.5 3.48486L63.8555 10.9287L71.6629 10.8687L65.3107 15.4089L67.7807 22.8158L61.5 18.178L55.2193 22.8158L57.6893 15.4089L51.3372 10.8687L59.1446 10.9287L61.5 3.48486Z" fill="#5A3F18"/>
+                            <path d="M87.1685 3.48486L89.5239 10.9287L97.3314 10.8687L90.98 15.4089L93.4492 22.8158L87.1685 18.178L80.8878 22.8158L83.3578 15.4089L77.0056 10.8687L84.813 10.9287L87.1685 3.48486Z" fill="#5A3F18"/>
+                            <path d="M112.837 3.48486L115.193 10.9287L123 10.8687L116.649 15.4089L119.118 22.8158L112.837 18.178L106.557 22.8158L109.026 15.4089L102.674 10.8687L110.482 10.9287L112.837 3.48486Z" fill="#5A3F18"/>
+                            </svg>
+                            </i>
+                        </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery" class="gallery">
+    <div class="gallery-wrapper">
+      <div class="container-content">
+        <h2 class="section-title">*Follow Us <a href="https://www.instagram.com/buna_beauty_center/" class="target" target="_blank">@buna_beauty_center*</a></h2>
+      </div>
+      <div class="wrap">
+        <div class="box">
+            <div class="innerContent">
+              <img src="/assets/rainbow-nails.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="innerContent">
+              <img src="/assets/nails-neon.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="innerContent">
+              <img src="/assets/nails-palepink.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="innerContent">
+              <img src="/assets/nails-lightbrown.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="innerContent">
+              <img src="/assets/nails-green.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="innerContent">
+              <img src="/assets/nails-crystal.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="innerContent">
+              <img src="/assets/nails-beige.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="innerContent">
+              <img src="/assets/nails-pink.jpg" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="video-placeholder pad">
+    <div class="video-wrapper">
+      <div class="banner">
+        <div class="banner-wrapper">
+            <div class="content">
+                <div class="image">
+                    <img src="/assets/video-thubnail.jpg" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="icon_content_view video_active">
+                    <div class="play-button" data-src="https://www.youtube.com/embed/HPsfB7Uc7JQ?autoplay=1" onclick="toggle();">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+              <div class="contact-box">
+                <div class="inner-contact">
+                  <div class="icon-contact"><img src="/assets/icon-contactus.svg" alt=""></div>
+                  <div class="title-contact"><h2 class="section-title">Contact Us</h2></div>
+                  <div class="value-contact"><p>+383 44 333 456</p></div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="trailer">
+                <div class="shadow" onclick="toggle();"></div>
+                <!-- Initially hidden iframe. It will appear when the play button is clicked -->
+                <iframe id="youtube-video" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+
+
+  <script>
+    function applyFeatureBoxAnimation() {
+      var featureBoxes = document.getElementsByClassName("feature-box");
+      if (window.innerWidth <= 767) {
+        for (var i = 0; i < featureBoxes.length; i++) {
+          featureBoxes[i].classList.add("w3-animate-right");
+        }
+        featureBoxCarousel();
+      } else {
+        for (var i = 0; i < featureBoxes.length; i++) {
+          featureBoxes[i].classList.remove("w3-animate-right");
+          featureBoxes[i].style.display = "block";
+        }
+        clearTimeout(featureBoxCarouselTimeout);
+      }
+    }
+  
+    var featureBoxIndex = 0;
+    var featureBoxCarouselTimeout;
+  
+    function featureBoxCarousel() {
+      var i;
+      var x = document.getElementsByClassName("feature-box");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      featureBoxIndex++;
+      if (featureBoxIndex > x.length) {
+        featureBoxIndex = 1;
+      }
+      x[featureBoxIndex - 1].style.display = "block";
+      if (window.innerWidth <= 767) {
+        featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 7000);
+      }
+    }
+  
+    window.onload = applyFeatureBoxAnimation;
+    window.onresize = applyFeatureBoxAnimation;
+  </script>
+  <script>
+    const tabsContainer = document.querySelector(".tabs-container");
+const tabsList = tabsContainer.querySelector("ul");
+const tabButtons = tabsList.querySelectorAll("a");
+const tabPanels = tabsContainer.querySelectorAll(".tabs__panels > div");
+
+tabsList.setAttribute("role", "tablist");
+
+tabsList.querySelectorAll("li").forEach((listitem) => {
+  listitem.setAttribute("role", "presentation");
+});
+
+tabButtons.forEach((tab, index) => {
+  tab.setAttribute("role", "tab");
+  if (index === 0) {
+    tab.setAttribute("aria-selected", "true");
+  } else {
+    tab.setAttribute("tabindex", "-1");
+    tabPanels[index].setAttribute("hidden", "");
+  }
+});
+
+tabPanels.forEach((panel) => {
+  panel.setAttribute("role", "tabpanel");
+  panel.setAttribute("tabindex", "0");
+});
+
+tabsContainer.addEventListener("click", (e) => {
+  const clickedTab = e.target.closest("a");
+  if (!clickedTab) return;
+  e.preventDefault();
+
+  switchTab(clickedTab);
+});
+
+tabsContainer.addEventListener("keydown", (e) => {
+  switch (e.key) {
+    case "ArrowLeft":
+      moveLeft();
+      break;
+    case "ArrowRight":
+      moveRight();
+      break;
+    case "Home":
+      e.preventDefault();
+      switchTab(tabButtons[0]);
+      break;
+    case "End":
+      e.preventDefault();
+      switchTab(tabButtons[tabButtons.length - 1]);
+      break;
+  }
+});
+
+function moveLeft() {
+  const currentTab = document.activeElement;
+  if (!currentTab.parentElement.previousElementSibling) {
+    switchTab(tabButtons[tabButtons.length - 1]);
+  } else {
+    switchTab(
+      currentTab.parentElement.previousElementSibling.querySelector("a")
+    );
+  }
+}
+
+function moveRight() {
+  const currentTab = document.activeElement;
+  if (!currentTab.parentElement.nextElementSibling) {
+    switchTab(tabButtons[0]);
+  } else {
+    switchTab(currentTab.parentElement.nextElementSibling.querySelector("a"));
+  }
+}
+
+function switchTab(newTab) {
+  const activePanelId = newTab.getAttribute("href");
+  const activePanel = tabsContainer.querySelector(activePanelId);
+
+  tabButtons.forEach((button) => {
+    button.setAttribute("aria-selected", false);
+    button.setAttribute("tabindex", "-1");
+  });
+
+  tabPanels.forEach((panel) => {
+    panel.setAttribute("hidden", true);
+  });
+
+  activePanel.removeAttribute("hidden");
+
+  newTab.setAttribute("aria-selected", true);
+  newTab.setAttribute("tabindex", "0");
+  newTab.focus();
+}
+
+// Add event listener to card links to stop event propagation
+const cardLinks = document.querySelectorAll('.single-card a');
+
+
+cardLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+});
+
+  </script>
+  <script>
+    function applyStatsBoxAnimation() {
+      var featureBoxes = document.getElementsByClassName("stats-box");
+      if (window.innerWidth <= 767) {
+        for (var i = 0; i < featureBoxes.length; i++) {
+          featureBoxes[i].classList.add("w3-animate-top");
+        }
+        statsBoxCarousel();
+      } else {
+        for (var i = 0; i < featureBoxes.length; i++) {
+          featureBoxes[i].classList.remove("w3-animate-top");
+          featureBoxes[i].style.display = "block";
+        }
+        clearTimeout(statsBoxCarouselTimeout);
+      }
+    }
+  
+    var statsBoxIndex = 0;
+    var statsBoxCarouselTimeout;
+  
+    function statsBoxCarousel() {
+      var i;
+      var x = document.getElementsByClassName("stats-box");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      statsBoxIndex++;
+      if (statsBoxIndex > x.length) {
+        statsBoxIndex = 1;
+      }
+      x[statsBoxIndex - 1].style.display = "block";
+      if (window.innerWidth <= 767) {
+        statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 7000);
+      }
+    }
+  
+    window.onload = function() {
+      applyFeatureBoxAnimation();
+      applyStatsBoxAnimation();
+    };
+    window.onresize = function() {
+      applyFeatureBoxAnimation();
+      applyStatsBoxAnimation();
+    };
+  </script>
+  <script>
+    function toggle() {
+        var trailer = document.querySelector(".trailer");
+        var iframe = document.querySelector("#youtube-video");
+        trailer.classList.toggle("active");
+
+        // When showing the iframe, set the source URL to start playing the video
+        if (trailer.classList.contains("active")) {
+            var videoSrc = document.querySelector(".play-button").getAttribute("data-src");
+            iframe.src = videoSrc; // Set the video src to start the video
+        } else {
+            iframe.src = ""; // Reset the iframe when hiding it (to stop the video)
+        }
+    }
+  </script>
+  
+

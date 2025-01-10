@@ -1,0 +1,33 @@
+---
+title: Gallery
+layout: 'base.njk'
+---
+<section class="gallery-individual">
+    <header class="gallery-header">
+        <div class="gallery-image"></div>
+        <div class="gallery-container">
+            <div class="gallery-wrapper">
+                <div class="gallery-upper-content">
+                    <h1 class="section-title">Check Our
+                         Nails Gallery</h1>
+                    <p>Specializing in nails, waxing, and beauty care,
+                        we’re here to help you look and feel your best.</p>
+                </div>
+                <div class="gallery-bottom-content">
+                    <a href="#gallery">
+                                <span class="tagline">Gallery</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="gallery" class="gallery-content pad">
+        <div class="gallery-content-container">
+            <ul class="gallery-content-wrapper">
+                {%- for post in collections.nails -%}
+                  {% include 'gallery-snippet.njk' %}
+                {%- endfor %}
+            </ul>
+        </div>
+    </section>
+</section>

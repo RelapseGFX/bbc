@@ -1,0 +1,87 @@
+---
+layout: 'base.njk'
+---
+
+<body>
+    <section class="article">
+        <div class="container">
+            <div class="article-wrapper">
+                <header class="service-header">
+                    <img class="article-image" src="/assets/article-image.jpg" alt="">
+                </header>
+                <div class="article-container">
+                    <section class="article-content">
+                        <div class="inner-article">
+                            <div class="article-title" data-selection-type="title_tagline">
+                                <div class="upper-heading bot">
+                                    <div><h2 class="section-title">{{ title }}</h2></div>
+                                    <p>{{ description }}</p>
+                                </div>
+                            </div>
+                            <div class="details" data-selection-type="details-wrapper">
+                                <div class="details-wrapper">
+                                    <div class="inner-details">
+                                        <div class="inner-span-details">
+                                          <span>{{ duration }}</span>
+                                          <span>{{ price }}</span>
+                                          <span>Pristina</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="book-button-wrapper">
+                                    <a class="btn btn--primary" href="">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="description-container" data-selection-type="title_tagline">
+                                <hr>
+                                <div class="description-wrapper">
+                                    <div class="inner-description bot">
+                                        <div><h5 class="section-title">Service Description</h5></div>
+                                        <p>{{ content | safe }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-images" data-selection-type="title_tagline">
+                                <div class="inner-gallery">
+                                    <div class="inner-gallery-wrapper">
+                                        <img src="/assets/article-example1.jpg" alt="">
+                                        <img src="/assets/article-example2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="privacy-policy" data-selection-type="title_tagline">
+                                <div class="policy-wrapper">
+                                    <div class="inner-policy bot">
+                                        <div><h5 class="section-title">Cancellation Policy</h5></div>
+                                        <p>Our Cancellation Policy requires 24 hours' notice for any changes or cancellations. This helps us accommodate other clients and avoid fees. If you need to reschedule, please let us know as soon as possible.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-title" data-selection-type="title_tagline">
+                                <hr>
+                            </div>
+                        </div>
+                    </section>
+                    <aside role="region" aria-label="Contact Details" data-hook="sidebar" data-hook="sidebar" class="article-info">
+                        <div class="contact-details">
+                            <h5 class="section-title">Contact</h5>
+                            <ul class="contact-info">
+                                <li>
+                                    <p>Luan Haradinaj</p>
+                                    <p>Prishtina, 10000</p>
+                                    <p>jehona.buna@gmail.com</p>
+                                    <p>+383 44 333 456</p>
+                                    <p>Mon-Sat: 8 AM - 19 PM</p>
+                                    <p>Sunday: Closed</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<li class="service-box">
+    <article class="box-snippet">
+        <div class="box-thubnail"><a href="{{ post.url }}"><img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"></a></div>
+        <div class="box-content">
+            <div class="inner-box-content">
+                <div class="upper-content">
+                    <div class="box-title"><a href="/article"><h3 class="section-title">{{ post.data.title }}</h3></a></div>
+                    <p class="box-description">{{ post.data.description }}</p>
+                    <hr>
+                    <p class="box-description">{{ post.data.price }}</p>              
+                </div>
+                <div class="bottom-content">
+                    <a class="btn btn--primary" href="{{ post.url }}">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </article>
+</li>
