@@ -2771,10 +2771,10 @@ header img {
   object-fit: cover;
   display: block;
 }
-.gallery-container .gallery-wrapper {
+.gallery-container .head-wrapper {
   display: grid;
 }
-.gallery-wrapper {
+.head-wrapper {
   color: white;
 }
 .gallery-upper-content p {
