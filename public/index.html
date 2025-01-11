@@ -552,7 +552,7 @@
   
     function applyFeatureBoxAnimation() {
       var featureBoxes = document.getElementsByClassName("feature-box");
-      var isSmallScreen = window.innerWidth <= 767;
+      var isSmallScreen = window.innerWidth <= 750;
   
       for (var i = 0; i < featureBoxes.length; i++) {
         featureBoxes[i].classList.toggle("w3-animate-right", isSmallScreen);
@@ -575,7 +575,7 @@
       featureBoxIndex = (featureBoxIndex + 1) % featureBoxes.length;
       featureBoxes[featureBoxIndex].style.display = "block";
   
-      if (window.innerWidth <= 767) {
+      if (window.innerWidth <= 750) {
         clearTimeout(featureBoxCarouselTimeout);  // Clear previous timeout
         featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 7000);  // Set new timeout
       }
@@ -611,7 +611,7 @@
       statsBoxIndex = (statsBoxIndex + 1) % statsBoxes.length;
       statsBoxes[statsBoxIndex].style.display = "block";
   
-      if (window.innerWidth <= 767) {
+      if (window.innerWidth <= 750) {
         clearTimeout(statsBoxCarouselTimeout);  // Clear previous timeout
         statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 7000);  // Set new timeout
       }
@@ -629,11 +629,6 @@
       clearTimeout(statsBoxCarouselTimeout);    // Clear timeout when resized
     };
   </script>
-  
-  
-  
-  
-  
   <script>
     const tabsContainer = document.querySelector(".tabs-container");
 const tabsList = tabsContainer.querySelector("ul");
@@ -739,11 +734,6 @@ cardLinks.forEach(link => {
 });
 
   </script>
-  
-  
-  
-  
-  
   <script>
     function toggle() {
         var trailer = document.querySelector(".trailer");
