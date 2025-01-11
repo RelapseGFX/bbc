@@ -81,26 +81,25 @@
 
     <main>
         
-<section class="services pad">
+<section class="services">
+  <div class="margin-top"></div>
+  <div class="service-individualBg"></div>
   <div class="services-wrapper">
     <div class="container-content1">
       <h2 id="tabs-title" class="section-title">Check Our Beauty Services</h2>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nibh urna, mattis
-        eget metus eu, pharetra tincidunt sem. Pellentesque non velit quis erat laoreet
-        condimentum. Phasellus tempor justo quis dictum fermentum.</p>
     </div>
     <div class="tabs-container1">
-      <ul aria-labelledby="tabs-title">
-      <li><a id="tab-1" class="tabs" href="#all-services"> All Services </a></li>
-      <li><a id="tab-1" class="tabs" href="#waxing"> Waxing </a></li>
-      <li><a id="tab-2" class="tabs" href="#manicure"> Manicure </a></li>
-      <li><a id="tab-3" class="tabs" href="#pedicure"> Pedicure </a></li>
-      <li><a id="tab-4" class="tabs" href="#face-treatment"> Face Treatment </a></li>
-      </ul>
-
-      <div class="tabs__panels flow">
-        <div id="all-services" aria-labelledby="tab-1">
-          <ul class="cards-wrapper"><li class="service-box">
+      <ul aria-labelledby="tabs-title" class="tabs-title">
+        <li><a id="tab-1" class="tabs" href="#all-services"> All Services </a></li>
+        <li><a id="tab-1" class="tabs" href="#waxing"> Waxing </a></li>
+        <li><a id="tab-2" class="tabs" href="#manicure"> Manicure </a></li>
+        <li><a id="tab-3" class="tabs" href="#pedicure"> Pedicure </a></li>
+        <li><a id="tab-4" class="tabs" href="#face-treatment"> Face Treatment </a></li>
+        </ul>
+  
+        <div class="tabs__panels flow">
+          <div id="all-services" aria-labelledby="tab-1">
+            <ul class="cards-wrapper"><li class="service-box">
     <article class="box-snippet">
         <div class="box-thubnail"><a href="/service/bikini-waxing/"><img src="/assets/service/bikini-waxing.jpg" alt="this is a test"></a></div>
         <div class="box-content">
@@ -339,10 +338,10 @@
         </div>
     </article>
 </li>
-          </ul>
-        </div>
-        <div id="waxing" aria-labelledby="tab-2">
-          <ul class="cards-wrapper"><li class="service-box">
+            </ul>
+          </div>
+          <div id="waxing" aria-labelledby="tab-2">
+            <ul class="cards-wrapper"><li class="service-box">
     <article class="box-snippet">
         <div class="box-thubnail"><a href="/service/bikini-waxing/"><img src="/assets/service/bikini-waxing.jpg" alt="this is a test"></a></div>
         <div class="box-content">
@@ -445,10 +444,10 @@
         </div>
     </article>
 </li>
-          </ul>
-        </div>
-        <div id="manicure" aria-labelledby="tab-3">
-          <ul class="cards-wrapper"><li class="service-box">
+            </ul>
+          </div>
+          <div id="manicure" aria-labelledby="tab-3">
+            <ul class="cards-wrapper"><li class="service-box">
     <article class="box-snippet">
         <div class="box-thubnail"><a href="/service/acrylic-manicure/"><img src="/assets/service/acrylic-manicure.jpg" alt="this is a test"></a></div>
         <div class="box-content">
@@ -500,10 +499,10 @@
         </div>
     </article>
 </li>
-          </ul>
-        </div>
-        <div id="pedicure" aria-labelledby="tab-4">
-          <ul class="cards-wrapper"><li class="service-box">
+            </ul>
+          </div>
+          <div id="pedicure" aria-labelledby="tab-4">
+            <ul class="cards-wrapper"><li class="service-box">
     <article class="box-snippet">
         <div class="box-thubnail"><a href="/service/acrylic-pedicure/"><img src="/assets/service/acrylic-pedicure.jpg" alt="this is a test"></a></div>
         <div class="box-content">
@@ -521,10 +520,10 @@
         </div>
     </article>
 </li>
-          </ul>
-        </div>
-        <div id="face-treatment" aria-labelledby="tab-5">
-          <ul class="cards-wrapper"><li class="service-box">
+            </ul>
+          </div>
+          <div id="face-treatment" aria-labelledby="tab-5">
+            <ul class="cards-wrapper"><li class="service-box">
     <article class="box-snippet">
         <div class="box-thubnail"><a href="/service/general-face-treatment(Vaporizing)/"><img src="/assets/service/1-2-waxing.jpg" alt="this is a test"></a></div>
         <div class="box-content">
@@ -593,10 +592,11 @@
         </div>
     </article>
 </li>
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
+  </div>
+  <div class="margin-bottom"></div>
 </section>
 <script>
 const tabsContainer = document.querySelector(".tabs-container1 , .tabs-container");
@@ -693,7 +693,8 @@ newTab.focus();
 }
 
 // Add event listener to card links to stop event propagation
-const cardLinks = document.querySelectorAll('.single-card a');
+const cardLinks = document.querySelectorAll('.single-card, .service-box a');
+
 
 
 cardLinks.forEach(link => {
@@ -736,7 +737,7 @@ link.addEventListener('click', (e) => {
             </div>
         </div>
         <div class="footer-right">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.9814676447845!2d21.156639476514876!3d42.66174811598777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549fb87ccf2b45%3A0x255f429294e596f1!2sBuna%20Beauty%20Center!5e0!3m2!1sen!2s!4v1734993647722!5m2!1sen!2s" width="900" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.9814676447845!2d21.156639476514876!3d42.66174811598777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549fb87ccf2b45%3A0x255f429294e596f1!2sBuna%20Beauty%20Center!5e0!3m2!1sen!2s!4v1734993647722!5m2!1sen!2s" width="900" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       <div class="footer-bottom">

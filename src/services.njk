@@ -4,61 +4,61 @@ layout: 'base.njk'
 page-url: '/services'
 ---
 
-<section class="services pad">
+<section class="services">
+  <div class="margin-top"></div>
+  <div class="service-individualBg"></div>
   <div class="services-wrapper">
     <div class="container-content1">
       <h2 id="tabs-title" class="section-title">Check Our Beauty Services</h2>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nibh urna, mattis
-        eget metus eu, pharetra tincidunt sem. Pellentesque non velit quis erat laoreet
-        condimentum. Phasellus tempor justo quis dictum fermentum.</p>
     </div>
     <div class="tabs-container1">
-      <ul aria-labelledby="tabs-title">
-      <li><a id="tab-1" class="tabs" href="#all-services"> All Services </a></li>
-      <li><a id="tab-1" class="tabs" href="#waxing"> Waxing </a></li>
-      <li><a id="tab-2" class="tabs" href="#manicure"> Manicure </a></li>
-      <li><a id="tab-3" class="tabs" href="#pedicure"> Pedicure </a></li>
-      <li><a id="tab-4" class="tabs" href="#face-treatment"> Face Treatment </a></li>
-      </ul>
-
-      <div class="tabs__panels flow">
-        <div id="all-services" aria-labelledby="tab-1">
-          <ul class="cards-wrapper">
-            {%- for post in collections.post -%}
-              {% include 'single-snippet.njk' %}
-            {%- endfor %}
-          </ul>
+      <ul aria-labelledby="tabs-title" class="tabs-title">
+        <li><a id="tab-1" class="tabs" href="#all-services"> All Services </a></li>
+        <li><a id="tab-1" class="tabs" href="#waxing"> Waxing </a></li>
+        <li><a id="tab-2" class="tabs" href="#manicure"> Manicure </a></li>
+        <li><a id="tab-3" class="tabs" href="#pedicure"> Pedicure </a></li>
+        <li><a id="tab-4" class="tabs" href="#face-treatment"> Face Treatment </a></li>
+        </ul>
+  
+        <div class="tabs__panels flow">
+          <div id="all-services" aria-labelledby="tab-1">
+            <ul class="cards-wrapper">
+              {%- for post in collections.post -%}
+                {% include 'single-snippet.njk' %}
+              {%- endfor %}
+            </ul>
+          </div>
+          <div id="waxing" aria-labelledby="tab-2">
+            <ul class="cards-wrapper">
+              {%- for post in collections.waxing -%}
+                {% include 'single-snippet.njk' %}
+              {%- endfor %}
+            </ul>
+          </div>
+          <div id="manicure" aria-labelledby="tab-3">
+            <ul class="cards-wrapper">
+              {%- for post in collections.manicure -%}
+                {% include 'single-snippet.njk' %}
+              {%- endfor %}
+            </ul>
+          </div>
+          <div id="pedicure" aria-labelledby="tab-4">
+            <ul class="cards-wrapper">
+              {%- for post in collections.pedicure -%}
+                {% include 'single-snippet.njk' %}
+              {%- endfor %}
+            </ul>
+          </div>
+          <div id="face-treatment" aria-labelledby="tab-5">
+            <ul class="cards-wrapper">
+              {%- for post in collections.facetreatment -%}
+                {% include 'single-snippet.njk' %}
+              {%- endfor %}
+            </ul>
+          </div>
         </div>
-        <div id="waxing" aria-labelledby="tab-2">
-          <ul class="cards-wrapper">
-            {%- for post in collections.waxing -%}
-              {% include 'single-snippet.njk' %}
-            {%- endfor %}
-          </ul>
-        </div>
-        <div id="manicure" aria-labelledby="tab-3">
-          <ul class="cards-wrapper">
-            {%- for post in collections.manicure -%}
-              {% include 'single-snippet.njk' %}
-            {%- endfor %}
-          </ul>
-        </div>
-        <div id="pedicure" aria-labelledby="tab-4">
-          <ul class="cards-wrapper">
-            {%- for post in collections.pedicure -%}
-              {% include 'single-snippet.njk' %}
-            {%- endfor %}
-          </ul>
-        </div>
-        <div id="face-treatment" aria-labelledby="tab-5">
-          <ul class="cards-wrapper">
-            {%- for post in collections.facetreatment -%}
-              {% include 'single-snippet.njk' %}
-            {%- endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
+  </div>
+  <div class="margin-bottom"></div>
 </section>
 <script>
 const tabsContainer = document.querySelector(".tabs-container1 , .tabs-container");
@@ -155,7 +155,8 @@ newTab.focus();
 }
 
 // Add event listener to card links to stop event propagation
-const cardLinks = document.querySelectorAll('.single-card a');
+const cardLinks = document.querySelectorAll('.single-card, .service-box a');
+
 
 
 cardLinks.forEach(link => {

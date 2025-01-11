@@ -19,7 +19,7 @@ layout: 'base.njk'
   <section class="features">
     <div class="container">
         <div class="features-wrapper w3-section">
-            <div class="feature-box w3-animate-right">
+            <div class="feature-box w3-center w3-animate-right">
                 <div class="feature-box-content">
                     <div class="icon-feature"><img src="/assets/expertise.svg" alt=""></div>
                     <div class="content-feature">
@@ -28,7 +28,7 @@ layout: 'base.njk'
                     </div>
                 </div>
             </div>
-            <div class="feature-box w3-animate-right">
+            <div class="feature-box w3-center w3-animate-right">
                 <div class="feature-box-content">
                     <div class="icon-feature"><img src="/assets/trendsetters-icon.svg" alt=""></div>
                     <div class="content-feature">
@@ -37,7 +37,7 @@ layout: 'base.njk'
                     </div>
                 </div>
             </div>
-            <div class="feature-box w3-animate-right">
+            <div class="feature-box w3-center w3-animate-right">
                 <div class="feature-box-content">
                     <div class="icon-feature"><img src="/assets/touch-icon.svg" alt=""></div>
                     <div class="content-feature">
@@ -106,7 +106,7 @@ layout: 'base.njk'
         <div class="about-image"><img src="/assets/about-beauty-center.jpg" alt=""></div>
         <div class="about-stats">
                     <div class="stats-wrapper w3-section">
-                        <div class="stats-box w3-animate-top">
+                        <div class="stats-box w3-center w3-animate-top">
                             <div class="inner-stats">
                               <div class="inner-box-stats">
                                 <span class="value">17 <sup class="value">+</sup></span></h2>
@@ -114,7 +114,7 @@ layout: 'base.njk'
                               </div>
                             </div>
                         </div>
-                        <div class="stats-box w3-animate-top">
+                        <div class="stats-box w3-center w3-animate-top">
                             <div class="inner-stats">
                               <div class="inner-box-stats">
                                 <span class="value">150 <sup class="value">+</sup></span></h2>
@@ -122,7 +122,7 @@ layout: 'base.njk'
                               </div>
                             </div>
                         </div>
-                        <div class="stats-box w3-animate-top">
+                        <div class="stats-box w3-center w3-animate-top">
                             <div class="inner-stats">
                               <div class="inner-box-stats">
                                 <span class="value">25 <sup class="value">+</sup></span></h2>
@@ -424,7 +424,7 @@ layout: 'base.njk'
       }
       x[featureBoxIndex - 1].style.display = "block";
       if (window.innerWidth <= 767) {
-        featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 1000000);
+        featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 7000);
       }
     }
   
@@ -568,7 +568,7 @@ cardLinks.forEach(link => {
       }
       x[statsBoxIndex - 1].style.display = "block";
       if (window.innerWidth <= 767) {
-        statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 1000000);
+        statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 7000);
       }
     }
   

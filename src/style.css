@@ -776,11 +776,13 @@ background-color: var(--clr-neutral-900);
 .container-content .section-title {
   margin-bottom: 3.22%;
 }
-.container-content1 .section-title {
-  margin-bottom: 3.22%;
-}
+
 .container-content1 {
   text-align: center;
+}
+.container-content1, .tabs-container1 {
+  width: min(115.2rem, 100% - 2rem);
+  margin-inline: auto;
 }
 @media screen and (min-width: 751px) and (max-width: 1000px) {
   .container-content, .container-content1 {
@@ -792,7 +794,7 @@ background-color: var(--clr-neutral-900);
   padding-top: 15px;
   padding-bottom: 34px;
 }
-.tabs-container1 ul {
+.tabs-container1 .tabs-title {
   text-align: center;
 }
 @media screen and (min-width: 751px) and (max-width: 1000px) {
@@ -1159,21 +1161,21 @@ background: transparent;
 }
 @media screen and (min-width: 751px) and (max-width: 1000px) {
   .why-choose .container .mirror-wrapper {
+    grid-template-columns: 1fr 1fr;
     padding-top: 34px;
     padding-bottom: 84px;
   }
 }
 @media screen and (min-width: 1001px) {
   .why-choose .container .mirror-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
     padding-top: 62px;
     padding-bottom: 84px;
   }
 }
 .mirror-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   align-items: center;
-  justify-content: center;
   gap: 40px;
 }
 
@@ -1181,8 +1183,6 @@ background: transparent;
 
   background-color: #FFF;
   width: 100%;
-  box-sizing: border-box;
-  flex: 1 1 100%;
 
   .mirror-thubnail {
     margin-bottom: 20px;
@@ -1211,29 +1211,12 @@ background: transparent;
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 750px) {
   .mirror-wrapper .card-mirror {
 
-
-  
       .mirror-thubnail {
-  
           img {
-              height: 500px;
-          }
-      }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .mirror-wrapper .card-mirror {
-
-
-  
-      .mirror-thubnail {
-  
-          img {
-              height: 500px;
+              max-height: 580px;
           }
       }
   }
@@ -1243,11 +1226,6 @@ background: transparent;
 
   .mirror-wrapper .card-mirror {
 
-      background-color: #FFF;
-      width: calc(50.00% - 40px);
-      box-sizing: border-box;
-      flex: 1 1 calc(50.00% - 40px);
-  
       .mirror-thubnail {
   
           img {
@@ -1265,10 +1243,8 @@ background: transparent;
   .mirror-wrapper .card-mirror {
 
       background-color: #FFF;
-      width: calc(33.33% - 40px);
       box-sizing: border-box;
-      flex: 1 1 calc(33.33% - 40px);
-  
+
       .mirror-thubnail {
           img {
               width: 100%;
@@ -1276,7 +1252,6 @@ background: transparent;
               display: block;
           }
       }
-  
   }
 }
 /* NAILS GALLERY */
@@ -1972,6 +1947,15 @@ footer .footer-right {
   justify-content: flex-end;
 }
 
+.footer-right iframe {
+  border-radius: 12px;
+  border: 4px solid #fff;
+  transition: 0.3s all ease;
+}
+.footer-right:hover iframe {
+  transform: scale(1.023);
+}
+
 footer .footer-right iframe {
   width: 100%;
 }
@@ -2046,8 +2030,8 @@ footer .footer-right iframe {
   .footer-top {
     padding: 62px 0 84px;
   }
-
 }
+
 /* VIDEO */
 
 .the_building_tour {
@@ -2370,8 +2354,51 @@ footer .footer-right iframe {
     text-decoration: none;
     font-size: 16px;
     color: inherit;
+}
+
+.services {
+  position: relative;
+}
+
+.services .service-individualBg {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -2;
+  margin-inline: auto;
+}
+
+.service-individualBg {
+  width: min(120.27rem, 100% - 2rem);
+  background-color: #FFF0DB;
+  margin-inline: auto;
+  border-radius: 12px;
+}
+
+.margin-top {
+  margin-top: 90px;
+}
+@media (min-width: 1001px) {
+  .margin-top {
+    margin-top: 165px;
   }
-  
+}
+.margin-bottom {
+  margin-top: 34px;
+}
+@media (min-width: 751px) and (max-width: 1000px) {
+  .margin-bottom {
+    margin-top: 62px;
+  }
+}
+@media (min-width: 1001px) {
+  .margin-bottom {
+    margin-top: 84px;
+  }
+}
+
   .pad {
     padding-top: 5.99%;
     padding-bottom: 84px;
