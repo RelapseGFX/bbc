@@ -549,16 +549,16 @@
   <script>
     function applyFeatureBoxAnimation() {
       var featureBoxes = document.getElementsByClassName("feature-box");
-      if (window.innerWidth <= 767) {
-        for (var i = 0; i < featureBoxes.length; i++) {
-          featureBoxes[i].classList.add("w3-animate-right");
-        }
+      var isSmallScreen = window.innerWidth <= 767;
+  
+      for (var i = 0; i < featureBoxes.length; i++) {
+        featureBoxes[i].classList.toggle("w3-animate-right", isSmallScreen);
+        featureBoxes[i].style.display = isSmallScreen ? "none" : "block";
+      }
+  
+      if (isSmallScreen) {
         featureBoxCarousel();
       } else {
-        for (var i = 0; i < featureBoxes.length; i++) {
-          featureBoxes[i].classList.remove("w3-animate-right");
-          featureBoxes[i].style.display = "block";
-        }
         clearTimeout(featureBoxCarouselTimeout);
       }
     }
@@ -567,16 +567,15 @@
     var featureBoxCarouselTimeout;
   
     function featureBoxCarousel() {
-      var i;
       var x = document.getElementsByClassName("feature-box");
-      for (i = 0; i < x.length; i++) {
+  
+      for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none";
       }
-      featureBoxIndex++;
-      if (featureBoxIndex > x.length) {
-        featureBoxIndex = 1;
-      }
-      x[featureBoxIndex - 1].style.display = "block";
+  
+      featureBoxIndex = (featureBoxIndex + 1) % x.length;
+      x[featureBoxIndex].style.display = "block";
+  
       if (window.innerWidth <= 767) {
         featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 7000);
       }
@@ -585,6 +584,7 @@
     window.onload = applyFeatureBoxAnimation;
     window.onresize = applyFeatureBoxAnimation;
   </script>
+  
   <script>
     const tabsContainer = document.querySelector(".tabs-container");
 const tabsList = tabsContainer.querySelector("ul");
@@ -692,17 +692,17 @@ cardLinks.forEach(link => {
   </script>
   <script>
     function applyStatsBoxAnimation() {
-      var featureBoxes = document.getElementsByClassName("stats-box");
-      if (window.innerWidth <= 767) {
-        for (var i = 0; i < featureBoxes.length; i++) {
-          featureBoxes[i].classList.add("w3-animate-top");
-        }
+      var statsBoxes = document.getElementsByClassName("stats-box");
+      var isSmallScreen = window.innerWidth <= 767;
+  
+      for (var i = 0; i < statsBoxes.length; i++) {
+        statsBoxes[i].classList.toggle("w3-animate-top", isSmallScreen);
+        statsBoxes[i].style.display = isSmallScreen ? "none" : "block";
+      }
+  
+      if (isSmallScreen) {
         statsBoxCarousel();
       } else {
-        for (var i = 0; i < featureBoxes.length; i++) {
-          featureBoxes[i].classList.remove("w3-animate-top");
-          featureBoxes[i].style.display = "block";
-        }
         clearTimeout(statsBoxCarouselTimeout);
       }
     }
@@ -711,16 +711,15 @@ cardLinks.forEach(link => {
     var statsBoxCarouselTimeout;
   
     function statsBoxCarousel() {
-      var i;
-      var x = document.getElementsByClassName("stats-box");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+      var statsBoxes = document.getElementsByClassName("stats-box");
+  
+      for (var i = 0; i < statsBoxes.length; i++) {
+        statsBoxes[i].style.display = "none";
       }
-      statsBoxIndex++;
-      if (statsBoxIndex > x.length) {
-        statsBoxIndex = 1;
-      }
-      x[statsBoxIndex - 1].style.display = "block";
+  
+      statsBoxIndex = (statsBoxIndex + 1) % statsBoxes.length;
+      statsBoxes[statsBoxIndex].style.display = "block";
+  
       if (window.innerWidth <= 767) {
         statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 7000);
       }
@@ -730,11 +729,13 @@ cardLinks.forEach(link => {
       applyFeatureBoxAnimation();
       applyStatsBoxAnimation();
     };
+  
     window.onresize = function() {
       applyFeatureBoxAnimation();
       applyStatsBoxAnimation();
     };
   </script>
+  
   <script>
     function toggle() {
         var trailer = document.querySelector(".trailer");
