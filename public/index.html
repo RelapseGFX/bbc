@@ -567,25 +567,23 @@
     var featureBoxCarouselTimeout;
   
     function featureBoxCarousel() {
-      var featureBoxes = document.getElementsByClassName("feature-box");
+      var x = document.getElementsByClassName("feature-box");
   
-      for (var i = 0; i < featureBoxes.length; i++) {
-        featureBoxes[i].style.display = "none";
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
       }
   
-      featureBoxIndex = (featureBoxIndex + 1) % featureBoxes.length;
-      featureBoxes[featureBoxIndex].style.display = "block";
+      featureBoxIndex = (featureBoxIndex + 1) % x.length;
+      x[featureBoxIndex].style.display = "block";
   
       if (window.innerWidth <= 767) {
-        clearTimeout(featureBoxCarouselTimeout);  // Clear previous timeout
-        featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 7000);  // Set new timeout
+        featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 7000);
       }
     }
   
     window.onload = applyFeatureBoxAnimation;
     window.onresize = applyFeatureBoxAnimation;
   </script>
-  
   <script>
     const tabsContainer = document.querySelector(".tabs-container");
 const tabsList = tabsContainer.querySelector("ul");
@@ -692,6 +690,22 @@ cardLinks.forEach(link => {
 
   </script>
   <script>
+    function applyStatsBoxAnimation() {
+      var statsBoxes = document.getElementsByClassName("stats-box");
+      var isSmallScreen = window.innerWidth <= 767;
+  
+      for (var i = 0; i < statsBoxes.length; i++) {
+        statsBoxes[i].classList.toggle("w3-animate-top", isSmallScreen);
+        statsBoxes[i].style.display = isSmallScreen ? "none" : "block";
+      }
+  
+      if (isSmallScreen) {
+        statsBoxCarousel();
+      } else {
+        clearTimeout(statsBoxCarouselTimeout);
+      }
+    }
+  
     var statsBoxIndex = 0;
     var statsBoxCarouselTimeout;
   
@@ -706,8 +720,7 @@ cardLinks.forEach(link => {
       statsBoxes[statsBoxIndex].style.display = "block";
   
       if (window.innerWidth <= 767) {
-        clearTimeout(statsBoxCarouselTimeout);  // Clear previous timeout
-        statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 7000);  // Set new timeout
+        statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 7000);
       }
     }
   
@@ -719,7 +732,6 @@ cardLinks.forEach(link => {
     window.onresize = function() {
       applyFeatureBoxAnimation();
       applyStatsBoxAnimation();
-      clearTimeout(statsBoxCarouselTimeout);  // Clear timeout when resized
     };
   </script>
   
