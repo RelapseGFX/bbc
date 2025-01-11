@@ -547,6 +547,9 @@
 
 
   <script>
+    var featureBoxIndex = 0;
+    var featureBoxCarouselTimeout;
+  
     function applyFeatureBoxAnimation() {
       var featureBoxes = document.getElementsByClassName("feature-box");
       var isSmallScreen = window.innerWidth <= 767;
@@ -557,14 +560,10 @@
       }
   
       if (isSmallScreen) {
+        clearTimeout(featureBoxCarouselTimeout);  // Ensure previous timeout is cleared
         featureBoxCarousel();
-      } else {
-        clearTimeout(featureBoxCarouselTimeout);
       }
     }
-  
-    var featureBoxIndex = 0;
-    var featureBoxCarouselTimeout;
   
     function featureBoxCarousel() {
       var x = document.getElementsByClassName("feature-box");
@@ -581,9 +580,19 @@
       }
     }
   
-    window.onload = applyFeatureBoxAnimation;
-    window.onresize = applyFeatureBoxAnimation;
+    window.onload = function() {
+      applyFeatureBoxAnimation();
+      applyStatsBoxAnimation();
+    };
+  
+    window.onresize = function() {
+      applyFeatureBoxAnimation();
+      applyStatsBoxAnimation();
+      clearTimeout(featureBoxCarouselTimeout);  // Clear timeout when resized
+      clearTimeout(statsBoxCarouselTimeout);    // Clear timeout when resized
+    };
   </script>
+  
   <script>
     const tabsContainer = document.querySelector(".tabs-container");
 const tabsList = tabsContainer.querySelector("ul");
