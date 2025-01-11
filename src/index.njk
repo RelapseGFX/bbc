@@ -24,7 +24,7 @@ layout: 'base.njk'
                     <div class="icon-feature"><img src="/assets/expertise.svg" alt=""></div>
                     <div class="content-feature">
                     <span class="content-title">Proven Expertise</span>
-                    <span class="content-description">With over 25 years in the industry</span>
+                    <span class="content-description">With over 25 years in the industry, unmatched expertise</span>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@ layout: 'base.njk'
                     <div class="icon-feature"><img src="/assets/trendsetters-icon.svg" alt=""></div>
                     <div class="content-feature">
                         <span class="content-title">Trendsetters</span>
-                        <span class="content-description">Dedicated to staying at the cutting edge.</span>
+                        <span class="content-description">Dedicated to staying at the cutting edge</span>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@ layout: 'base.njk'
                     <div class="icon-feature"><img src="/assets/touch-icon.svg" alt=""></div>
                     <div class="content-feature">
                         <span class="content-title">Personal Touch</span>
-                        <span class="content-description">We began 15 years ago with our first shop.</span>
+                        <span class="content-description">We began 15 years ago with our first shop</span>
                     </div>
                 </div>
             </div>
@@ -424,7 +424,7 @@ layout: 'base.njk'
       }
       x[featureBoxIndex - 1].style.display = "block";
       if (window.innerWidth <= 767) {
-        featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 1000000);
+        featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 7000);
       }
     }
   
@@ -587,12 +587,11 @@ cardLinks.forEach(link => {
         var iframe = document.querySelector("#youtube-video");
         trailer.classList.toggle("active");
 
-        // When showing the iframe, set the source URL to start playing the video
         if (trailer.classList.contains("active")) {
             var videoSrc = document.querySelector(".play-button").getAttribute("data-src");
-            iframe.src = videoSrc; // Set the video src to start the video
+            iframe.src = videoSrc; 
         } else {
-            iframe.src = ""; // Reset the iframe when hiding it (to stop the video)
+            iframe.src = ""; 
         }
     }
   </script>
