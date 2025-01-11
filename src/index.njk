@@ -576,22 +576,21 @@ cardLinks.forEach(link => {
       statsBoxes[statsBoxIndex].style.display = "block";
   
       if (window.innerWidth <= 767) {
+        clearTimeout(statsBoxCarouselTimeout);  // Clear previous timeout
         statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 7000);
       }
     }
   
     window.onload = function() {
-      applyFeatureBoxAnimation();
       applyStatsBoxAnimation();
     };
   
     window.onresize = function() {
-      applyFeatureBoxAnimation();
       applyStatsBoxAnimation();
-      clearTimeout(featureBoxCarouselTimeout);  // Clear timeout when resized
       clearTimeout(statsBoxCarouselTimeout);    // Clear timeout when resized
     };
   </script>
+  
   
   
   <script>
