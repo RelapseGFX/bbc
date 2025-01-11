@@ -621,6 +621,9 @@ background-color: var(--clr-neutral-900);
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+.features-wrapper .feature-box {
+  text-align: left!important;
+}
 @media screen and (min-width: 751px) and (max-width: 991px) {
   .features .container .features-wrapper {
     padding: 2.68% 0;
