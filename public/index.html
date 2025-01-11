@@ -709,6 +709,7 @@ cardLinks.forEach(link => {
       }
   
       if (isSmallScreen) {
+        clearTimeout(statsBoxCarouselTimeout);  // Ensure previous timeout is cleared
         statsBoxCarousel();
       } else {
         clearTimeout(statsBoxCarouselTimeout);
@@ -741,8 +742,11 @@ cardLinks.forEach(link => {
     window.onresize = function() {
       applyFeatureBoxAnimation();
       applyStatsBoxAnimation();
+      clearTimeout(featureBoxCarouselTimeout);  // Clear timeout when resized
+      clearTimeout(statsBoxCarouselTimeout);    // Clear timeout when resized
     };
   </script>
+  
   
   <script>
     function toggle() {
