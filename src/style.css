@@ -755,7 +755,7 @@ background-color: var(--clr-neutral-900);
     padding-bottom: 9.5%;
   }
 }
-.container-content {
+.container-content, .container-content1 {
   box-sizing: border-box;
   position: relative;
   padding-top: 14.83%;
@@ -776,8 +776,14 @@ background-color: var(--clr-neutral-900);
 .container-content .section-title {
   margin-bottom: 3.22%;
 }
+.container-content1 .section-title {
+  margin-bottom: 3.22%;
+}
+.container-content1 {
+  text-align: center;
+}
 @media screen and (min-width: 751px) and (max-width: 1000px) {
-  .container-content {
+  .container-content, .container-content1 {
     padding-top: 10%;
     padding-bottom: 1.5%;
   }
@@ -786,6 +792,9 @@ background-color: var(--clr-neutral-900);
   padding-top: 15px;
   padding-bottom: 34px;
 }
+.tabs-container1 ul {
+  text-align: center;
+}
 @media screen and (min-width: 751px) and (max-width: 1000px) {
   .tabs-container, .tabs-container1 {
     padding-top: 34px;
@@ -793,7 +802,7 @@ background-color: var(--clr-neutral-900);
   }
 }
 @media screen and (min-width: 1001px) {
-  .container-content {
+  .container-content, .container-content1 {
     padding-top: 5.99%;
     padding-bottom: 0%;
   }
@@ -2393,33 +2402,6 @@ footer .footer-right iframe {
     .top {
       padding-top: 90px;
       padding-bottom: 62px;
-    }
-  }
-  .container-content {
-    box-sizing: border-box;
-    position: relative;
-    padding-top: 14.83%;
-    padding-bottom: 9.5%;
-    row-gap: 0px;
-    column-gap: 0px;
-    max-width: 99999999999px;
-    margin-left: clamp(0px, (100% - 99999999999px) / 2, 100 * var(--one-unit));
-    --section-max-width: 99999999999px;
-    flex-grow: 1;
-    display: var(--l_display,var(--container-display));
-    grid-template-rows: minmax(max(0.5px, 0.2808039 * (var(--scaling-factor) - var(--scrollbar-width))),auto);
-    grid-template-columns: minmax(0px,1fr);
-    --container-layout-type: grid-container-layout;
-    --container-display: grid;
-    --l_display: unset;
-  }
-  .container-content .section-title {
-    margin-bottom: 3.22%;
-  }
-  @media screen and (min-width: 751px) and (max-width: 1000px) {
-    .container-content {
-      padding-top: 10%;
-      padding-bottom: 1.5%;
     }
   }
   @media screen and (min-width: 751px) and (max-width: 1000px) {
