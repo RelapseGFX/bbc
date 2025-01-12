@@ -393,93 +393,93 @@ layout: 'base.njk'
 
 
   <script>
-var featureBoxIndex = 0;
-var featureBoxCarouselTimeout;
+    var featureBoxIndex = 0;
+    var featureBoxCarouselTimeout;
 
-function applyFeatureBoxAnimation() {
-    var featureBoxes = document.getElementsByClassName("feature-box");
-    var isSmallScreen = window.innerWidth <= 750;
+    function applyFeatureBoxAnimation() {
+        var featureBoxes = document.getElementsByClassName("feature-box");
+        var isSmallScreen = window.innerWidth <= 750;
 
-    for (var i = 0; i < featureBoxes.length; i++) {
+        for (var i = 0; i < featureBoxes.length; i++) {
+            if (isSmallScreen) {
+                featureBoxes[i].classList.add("w3-animate-right");
+                featureBoxes[i].style.display = "none";
+            } else {
+                featureBoxes[i].classList.remove("w3-animate-right");
+                featureBoxes[i].style.display = "block";
+            }
+        }
+
         if (isSmallScreen) {
-            featureBoxes[i].classList.add("w3-animate-right");
+            featureBoxCarousel(); // Ensure the carousel starts on load or resize
+        }
+    }
+
+    function featureBoxCarousel() {
+        var featureBoxes = document.getElementsByClassName("feature-box");
+
+        for (var i = 0; i < featureBoxes.length; i++) {
             featureBoxes[i].style.display = "none";
-        } else {
-            featureBoxes[i].classList.remove("w3-animate-right");
-            featureBoxes[i].style.display = "block";
+        }
+
+        featureBoxIndex = (featureBoxIndex + 1) % featureBoxes.length;
+        featureBoxes[featureBoxIndex].style.display = "block";
+
+        if (window.innerWidth <= 750) {
+            clearTimeout(featureBoxCarouselTimeout); // Ensure previous timeout is cleared
+            featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 3000); // Set new timeout
         }
     }
 
-    if (isSmallScreen) {
-        featureBoxCarousel(); // Ensure the carousel starts on load or resize
-    }
-}
+    var statsBoxIndex = 0;
+    var statsBoxCarouselTimeout;
 
-function featureBoxCarousel() {
-    var featureBoxes = document.getElementsByClassName("feature-box");
+    function applyStatsBoxAnimation() {
+        var statsBoxes = document.getElementsByClassName("stats-box");
+        var isSmallScreen = window.innerWidth <= 767;
 
-    for (var i = 0; i < featureBoxes.length; i++) {
-        featureBoxes[i].style.display = "none";
-    }
+        for (var i = 0; i < statsBoxes.length; i++) {
+            if (isSmallScreen) {
+                statsBoxes[i].classList.add("w3-animate-top");
+                statsBoxes[i].style.display = "none";
+            } else {
+                statsBoxes[i].classList.remove("w3-animate-top");
+                statsBoxes[i].style.display = "block";
+            }
+        }
 
-    featureBoxIndex = (featureBoxIndex + 1) % featureBoxes.length;
-    featureBoxes[featureBoxIndex].style.display = "block";
-
-    if (window.innerWidth <= 750) {
-        featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 3000); // Set timeout only if on small screen
-    }
-}
-
-var statsBoxIndex = 0;
-var statsBoxCarouselTimeout;
-
-function applyStatsBoxAnimation() {
-    var statsBoxes = document.getElementsByClassName("stats-box");
-    var isSmallScreen = window.innerWidth <= 767;
-
-    for (var i = 0; i < statsBoxes.length; i++) {
         if (isSmallScreen) {
-            statsBoxes[i].classList.add("w3-animate-top");
-            statsBoxes[i].style.display = "none";
-        } else {
-            statsBoxes[i].classList.remove("w3-animate-top");
-            statsBoxes[i].style.display = "block";
+            statsBoxCarousel(); // Ensure the carousel starts on load or resize
         }
     }
 
-    if (isSmallScreen) {
-        statsBoxCarousel(); // Ensure the carousel starts on load or resize
+    function statsBoxCarousel() {
+        var statsBoxes = document.getElementsByClassName("stats-box");
+
+        for (var i = 0; i < statsBoxes.length; i++) {
+            statsBoxes[i].style.display = "none";
+        }
+
+        statsBoxIndex = (statsBoxIndex + 1) % statsBoxes.length;
+        statsBoxes[statsBoxIndex].style.display = "block";
+
+        if (window.innerWidth <= 750) {
+            clearTimeout(statsBoxCarouselTimeout); // Ensure previous timeout is cleared
+            statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 3000); // Set new timeout
+        }
     }
-}
 
-function statsBoxCarousel() {
-    var statsBoxes = document.getElementsByClassName("stats-box");
+    window.onload = function() {
+        applyFeatureBoxAnimation();
+        applyStatsBoxAnimation();
+    };
 
-    for (var i = 0; i < statsBoxes.length; i++) {
-        statsBoxes[i].style.display = "none";
-    }
-
-    statsBoxIndex = (statsBoxIndex + 1) % statsBoxes.length;
-    statsBoxes[statsBoxIndex].style.display = "block";
-
-    if (window.innerWidth <= 750) {
-        statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 3000); // Set timeout only if on small screen
-    }
-}
-
-window.onload = function() {
-    applyFeatureBoxAnimation();
-    applyStatsBoxAnimation();
-};
-
-window.onresize = function() {
-    // Only apply the animation without interrupting the carousel behavior
-    applyFeatureBoxAnimation();
-    applyStatsBoxAnimation();
-    // Do not clear timeouts here as you want the animations to keep going uninterrupted
-};
-
+    window.onresize = function() {
+        applyFeatureBoxAnimation();
+        applyStatsBoxAnimation();
+    };
   </script>
+
   <script>
     const tabsContainer = document.querySelector(".tabs-container");
 const tabsList = tabsContainer.querySelector("ul");
