@@ -69,17 +69,17 @@ a {
   width: 100%;
 }
 
-
 .transparent-nav {
   background: transparent;
+  color: #fff;
 }
 
 .solid-nav {
-  background: #fff;
+  background: transparent;
+  transition: 0.3s all ease;
 }
 
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1001px) {
   .transparent-nav:hover {
     background: #fff;
     transition: all 0.3s ease;
@@ -93,6 +93,9 @@ a {
   }
   .transparent-nav:hover .wrapper .logo a .black-logo {
     display: block;
+  }
+  .solid-nav:hover {
+    background: #fff;
   }
 }
 .top-nav .wrapper{
@@ -120,7 +123,10 @@ a {
   height: 100%;
   display: block;
 }
-.wrapper .logo a .black-logo {
+.transparent-nav .wrapper .logo a .black-logo {
+  display: none;
+}
+.solid-nav .wrapper .logo a .white-logo {
   display: none;
 }
 .header-wrapper {
@@ -135,7 +141,6 @@ a {
 }
 .nav-links li a{
   display: block;
-  color: #fff;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -244,7 +249,16 @@ a {
   cursor: pointer;
   display: none;
 }
-.wrapper .ham.close-btn{
+.ham {
+  color: #fff;
+}
+.solid-nav .ham {
+  color: #111;
+}
+.wrapper .cls {
+  display: none;
+}
+.wrapper .cls.close-btn{
   position: absolute;
   right: 30px;
   top: 10px;
@@ -308,7 +322,10 @@ a {
     line-height: 90px;
     flex-direction: row;
   }
-  .wrapper .ham{
+  .wrapper .ham {
+    display: block;
+  }
+  .wrapper .cls{
     display: block;
     color: #fff;
   }
@@ -507,6 +524,10 @@ nav input{
   bottom: 60px;
 }
 
+.theflow .container .wrapper {
+  color: #fff;
+}
+
 @media screen and (max-width:767px) {
   
   .container .wrapper {
@@ -523,8 +544,6 @@ nav input{
   right: auto;
   top: auto;
   position: absolute;
-
-  color: white;
 
   span {
       font-size: 14px;
@@ -1861,7 +1880,7 @@ footer {
 }
 
 footer .footer-wrapper {
-  width: min(115rem, 100% - 2rem);
+  width: min(115rem, 100% - 4rem);
   margin-inline: auto;
 }
 
