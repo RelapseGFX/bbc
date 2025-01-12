@@ -634,7 +634,7 @@ background-color: var(--clr-neutral-900);
     padding: 3.9% 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 750px) {
   
   .features .container .features-wrapper .feature-box {
       display: none;
@@ -642,7 +642,7 @@ background-color: var(--clr-neutral-900);
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 751px) {
   .features .container .features-wrapper .feature-box {
       width: 33.33%;
       border-right: 1px solid #000;
@@ -665,7 +665,7 @@ background-color: var(--clr-neutral-900);
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 751px) {
   
   .features .container .features-wrapper .feature-box-content {
       padding: 0 32px;
