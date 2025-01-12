@@ -549,84 +549,90 @@
   <script>
     var featureBoxIndex = 0;
     var featureBoxCarouselTimeout;
-  
+
     function applyFeatureBoxAnimation() {
-      var featureBoxes = document.getElementsByClassName("feature-box");
-      var isSmallScreen = window.innerWidth <= 750;
-  
-      for (var i = 0; i < featureBoxes.length; i++) {
-        featureBoxes[i].classList.toggle("w3-animate-right", isSmallScreen);
-        featureBoxes[i].style.display = isSmallScreen ? "none" : "block";
-      }
-  
-      if (isSmallScreen) {
-        clearTimeout(featureBoxCarouselTimeout);  // Ensure previous timeout is cleared
-        featureBoxCarousel();
-      }
+        var featureBoxes = document.getElementsByClassName("feature-box");
+        var isSmallScreen = window.innerWidth <= 750;
+
+        for (var i = 0; i < featureBoxes.length; i++) {
+            if (isSmallScreen) {
+                featureBoxes[i].classList.add("w3-animate-right");
+                featureBoxes[i].style.display = "none";
+            } else {
+                featureBoxes[i].classList.remove("w3-animate-right");
+                featureBoxes[i].style.display = "block";
+            }
+        }
+
+        if (isSmallScreen) {
+            featureBoxCarousel();
+        }
     }
-  
+
     function featureBoxCarousel() {
-      var featureBoxes = document.getElementsByClassName("feature-box");
-  
-      for (var i = 0; i < featureBoxes.length; i++) {
-        featureBoxes[i].style.display = "none";
-      }
-  
-      featureBoxIndex = (featureBoxIndex + 1) % featureBoxes.length;
-      featureBoxes[featureBoxIndex].style.display = "block";
-  
-      if (window.innerWidth <= 750) {
-        clearTimeout(featureBoxCarouselTimeout);  // Clear previous timeout
-        featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 3000);  // Set new timeout
-      }
+        var featureBoxes = document.getElementsByClassName("feature-box");
+
+        for (var i = 0; i < featureBoxes.length; i++) {
+            featureBoxes[i].style.display = "none";
+        }
+
+        featureBoxIndex = (featureBoxIndex + 1) % featureBoxes.length;
+        featureBoxes[featureBoxIndex].style.display = "block";
+
+        if (window.innerWidth <= 750) {
+            clearTimeout(featureBoxCarouselTimeout);
+            featureBoxCarouselTimeout = setTimeout(featureBoxCarousel, 3000);
+        }
     }
-  
+
     var statsBoxIndex = 0;
     var statsBoxCarouselTimeout;
-  
+
     function applyStatsBoxAnimation() {
-      var statsBoxes = document.getElementsByClassName("stats-box");
-      var isSmallScreen = window.innerWidth <= 767;
-  
-      for (var i = 0; i < statsBoxes.length; i++) {
-        statsBoxes[i].classList.toggle("w3-animate-top", isSmallScreen);
-        statsBoxes[i].style.display = isSmallScreen ? "none" : "block";
-      }
-  
-      if (isSmallScreen) {
-        clearTimeout(statsBoxCarouselTimeout);  // Ensure previous timeout is cleared
-        statsBoxCarousel();
-      } else {
-        clearTimeout(statsBoxCarouselTimeout);
-      }
+        var statsBoxes = document.getElementsByClassName("stats-box");
+        var isSmallScreen = window.innerWidth <= 767;
+
+        for (var i = 0; i < statsBoxes.length; i++) {
+            if (isSmallScreen) {
+                statsBoxes[i].classList.add("w3-animate-top");
+                statsBoxes[i].style.display = "none";
+            } else {
+                statsBoxes[i].classList.remove("w3-animate-top");
+                statsBoxes[i].style.display = "block";
+            }
+        }
+
+        if (isSmallScreen) {
+            statsBoxCarousel();
+        }
     }
-  
+
     function statsBoxCarousel() {
-      var statsBoxes = document.getElementsByClassName("stats-box");
-  
-      for (var i = 0; i < statsBoxes.length; i++) {
-        statsBoxes[i].style.display = "none";
-      }
-  
-      statsBoxIndex = (statsBoxIndex + 1) % statsBoxes.length;
-      statsBoxes[statsBoxIndex].style.display = "block";
-  
-      if (window.innerWidth <= 750) {
-        clearTimeout(statsBoxCarouselTimeout);  // Clear previous timeout
-        statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 3000);  // Set new timeout
-      }
+        var statsBoxes = document.getElementsByClassName("stats-box");
+
+        for (var i = 0; i < statsBoxes.length; i++) {
+            statsBoxes[i].style.display = "none";
+        }
+
+        statsBoxIndex = (statsBoxIndex + 1) % statsBoxes.length;
+        statsBoxes[statsBoxIndex].style.display = "block";
+
+        if (window.innerWidth <= 750) {
+            clearTimeout(statsBoxCarouselTimeout);
+            statsBoxCarouselTimeout = setTimeout(statsBoxCarousel, 3000);
+        }
     }
-  
+
     window.onload = function() {
-      applyFeatureBoxAnimation();
-      applyStatsBoxAnimation();
+        applyFeatureBoxAnimation();
+        applyStatsBoxAnimation();
     };
-  
+
     window.onresize = function() {
-      applyFeatureBoxAnimation();
-      applyStatsBoxAnimation();
-      clearTimeout(featureBoxCarouselTimeout);  // Clear timeout when resized
-      clearTimeout(statsBoxCarouselTimeout);    // Clear timeout when resized
+        applyFeatureBoxAnimation();
+        applyStatsBoxAnimation();
+        clearTimeout(featureBoxCarouselTimeout);
+        clearTimeout(statsBoxCarouselTimeout);
     };
   </script>
   <script>
