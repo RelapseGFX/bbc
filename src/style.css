@@ -331,7 +331,7 @@ a {
   }
   .wrapper .nav-links{
     position: fixed;
-    height: 100vh;
+    height: 1000vh;
     width: 100%;
     max-width: 350px;
     top: 0;
