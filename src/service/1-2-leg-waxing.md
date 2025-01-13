@@ -9,9 +9,9 @@ showcaseone: /assets/showcase-12waxing1.jpg
 showcaseoneAlt: this is a test
 showcasetwo: /assets/showcase-12waxing2.jpg
 showcasetwoAlt: this is a test
-description: Precise and gentle care for a smooth, clean look
+description: Smooth results for your upper or lower legs
 price: €4.00
 duration: 2hr
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum enim non est sagittis, id suscipit magna pharetra. Quisque consequat pellentesque nunc. Curabitur a nisl vitae nibh vestibulum scelerisque nec vitae velit. Praesent consequat justo quis varius eleifend. Nunc posuere ante nunc, eu suscipit leo condimentum et. Nulla dignissim, nulla ut venenatis elementum, ex nulla facilisis arcu, sit amet fringilla dui ligula ut ex. Fusce porttitor enim turpis, vel scelerisque mauris laoreet sit amet. Fusce et risus vel lacus gravida sollicitudin sed a nibh.
+Perfectly smooth from knee to ankle with our efficient half-leg waxing service. For a more targeted approach, our half-leg waxing service removes hair from the knee down, giving you the smooth, flawless finish you desire. 
 
