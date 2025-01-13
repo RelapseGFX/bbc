@@ -3,6 +3,12 @@ title: Arm Waxing
 image: /assets/service/arm-waxing.jpg
 tags: ["post", "waxing"]
 imageAlt: this is a test
+thubnail: /assets/thubnail-arm-waxing.jpg
+thunbnailAlt: this is a test
+showcaseone: /assets/showcase-arm-waxing1.jpg
+showcaseoneAlt: this is a test
+showcasetwo: /assets/showcase-arm-waxing2.jpg
+showcasetwoAlt: this is a test
 description: Precise and gentle care for a smooth, clean look
 price: €4.00
 duration: 2 hr

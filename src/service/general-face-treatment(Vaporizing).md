@@ -1,8 +1,14 @@
 ---
 title: General Face-Treatment (Vaporizing)
-image: /assets/service/1-2-waxing.jpg
+image: /assets/service/face-treatment.jpg
 tags: ["post", "facetreatment"]
 imageAlt: this is a test
+thubnail: /assets/thubnail-face-treatment.jpg
+thunbnailAlt: this is a test
+showcaseone: /assets/showcase-face-treatment1.jpg
+showcaseoneAlt: this is a test
+showcasetwo: /assets/showcase-face-treatment2.jpg
+showcasetwoAlt: this is a test
 description: Precise and gentle care for a smooth, clean look
 price: €4.00
 duration: 2 hr

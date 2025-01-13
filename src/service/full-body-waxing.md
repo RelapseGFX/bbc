@@ -3,6 +3,12 @@ title: Full Body Waxing
 image: /assets/service/full-body-waxing.jpg
 tags: ["post", "waxing"]
 imageAlt: this is a test
+thubnail: /assets/thubnail-fullBody.jpg
+thunbnailAlt: this is a test
+showcaseone: /assets/showcase-fullBody1.jpg
+showcaseoneAlt: this is a test
+showcasetwo: /assets/showcase-fullBody2.jpg
+showcasetwoAlt: this is a test
 description: Precise and gentle care for a smooth, clean look
 price: €4.00
 duration: 2 hr

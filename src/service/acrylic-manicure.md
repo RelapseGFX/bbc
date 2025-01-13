@@ -3,6 +3,12 @@ title: Arylic Manicure
 image: /assets/service/acrylic-manicure.jpg
 tags: ["post", "manicure"]
 imageAlt: this is a test
+thubnail: /assets/thubnail-acrylic-manicure.jpg
+thunbnailAlt: this is a test
+showcaseone: /assets/showcase-manicure1.jpg
+showcaseoneAlt: this is a test
+showcasetwo: /assets/showcase-manicure2.jpg
+showcasetwoAlt: this is a test
 description: Precise and gentle care for a smooth, clean look
 price: €4.00
 duration: 2 hr

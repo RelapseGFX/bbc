@@ -3,6 +3,12 @@ title: 1/2 Leg Waxing
 image: /assets/service/1-2-waxing.jpg
 tags: ["post", "waxing", "featured"]
 imageAlt: this is a test
+thubnail: /assets/thubnail-12waxing.jpg
+thunbnailAlt: this is a test
+showcaseone: /assets/showcase-12waxing1.jpg
+showcaseoneAlt: this is a test
+showcasetwo: /assets/showcase-12waxing2.jpg
+showcasetwoAlt: this is a test
 description: Precise and gentle care for a smooth, clean look
 price: €4.00
 duration: 2hr

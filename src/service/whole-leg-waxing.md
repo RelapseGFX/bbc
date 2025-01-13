@@ -3,6 +3,12 @@ title: Whole Leg Waxing
 image: /assets/service/whole-leg-waxing.jpg
 tags: ["post", "waxing", "featured"]
 imageAlt: this is a test
+thubnail: /assets/thubnail-leg-waxing.jpg
+thunbnailAlt: this is a test
+showcaseone: /assets/showcase-leg-waxing1.jpg
+showcaseoneAlt: this is a test
+showcasetwo: /assets/showcase-leg-waxing2.jpg
+showcasetwoAlt: this is a test
 description: Precise and gentle care for a smooth, clean look
 price: €4.00
 duration: 2 hr

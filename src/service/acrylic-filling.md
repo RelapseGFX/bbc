@@ -3,6 +3,12 @@ title: Arylic Filling
 image: /assets/service/acrylic-filling.jpg
 tags: ["post", "manicure"]
 imageAlt: this is a test
+thubnail: /assets/thubnail-acrylic-filling.jpg
+thunbnailAlt: this is a test
+showcaseone: /assets/showcase-acrylic-filling1.jpg
+showcaseoneAlt: this is a test
+showcasetwo: /assets/showcase-acrylic-filling2.jpg
+showcasetwoAlt: this is a test
 description: Precise and gentle care for a smooth, clean look
 price: €4.00
 duration: 2 hr

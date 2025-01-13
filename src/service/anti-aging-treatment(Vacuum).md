@@ -1,8 +1,14 @@
 ---
 title: Anti Agin Treatment (Vacuum)
-image: /assets/service/1-2-waxing.jpg
+image: /assets/service/aging-treatment.jpg
 tags: ["post", "facetreatment"]
 imageAlt: this is a test
+thubnail: /assets/thubnail-aging-treatment.jpg
+thunbnailAlt: this is a test
+showcaseone: /assets/showcase-aging-treatment1.jpg
+showcaseoneAlt: this is a test
+showcasetwo: /assets/showcase-aging-treatment2.jpg
+showcasetwoAlt: this is a test
 description: Precise and gentle care for a smooth, clean look
 price: €4.00
 duration: 2 hr

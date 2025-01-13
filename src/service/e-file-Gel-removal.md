@@ -1,8 +1,14 @@
 ---
 title: E-File Gel Removal
-image: /assets/service/e-file-gel-removal.jpg
+image: /assets/service/gel-removal.jpg
 tags: ["post", "manicure"]
 imageAlt: this is a test
+thubnail: /assets/thubnail-gel-removal.jpg
+thunbnailAlt: this is a test
+showcaseone: /assets/showcase-gel-removal1.jpg
+showcaseoneAlt: this is a test
+showcasetwo: /assets/showcase-gel-removal2.jpg
+showcasetwoAlt: this is a test
 description: Precise and gentle care for a smooth, clean look
 price: €5.00
 duration: 2 hr
