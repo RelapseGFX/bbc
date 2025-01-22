@@ -77,7 +77,7 @@ nav: 'transparent-nav'
           </div>
           <div id="social-media" aria-labelledby="tab-2">
             <ul class="cards-wrapper">
-              {%- for post in collections.manicure | reverse -%}
+              {%- for post in collections.manicure -%}
                 {% include 'article-snippet.njk' %}
               {%- endfor %}
             </ul>
