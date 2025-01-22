@@ -1,7 +1,7 @@
 ---
 title: General Face-Treatment (Vaporizing)
 image: /assets/service/face-treatment.jpg
-tags: ["post", "facetreatment"]
+tags: ["post", "facetreatment", "featuredFacetreatment"]
 imageAlt: this is a test
 thubnail: /assets/thubnail-face-treatment.jpg
 thunbnailAlt: this is a test

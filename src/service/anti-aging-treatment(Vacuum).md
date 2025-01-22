@@ -1,7 +1,7 @@
 ---
 title: Anti Agin Treatment (Vacuum)
 image: /assets/service/aging-treatment.jpg
-tags: ["post", "facetreatment"]
+tags: ["post", "facetreatment", "featuredFacetreatment"]
 imageAlt: this is a test
 thubnail: /assets/thubnail-aging-treatment.jpg
 thunbnailAlt: this is a test
