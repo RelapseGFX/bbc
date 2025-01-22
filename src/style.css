@@ -1645,7 +1645,10 @@ background: transparent;
 
 }
 @media only screen and (min-width : 1001px) {
-  /* Small desktop / ipad view: 3 tiles */
+  .wrap {
+    max-width: max(118.67em - 2em);
+    margin-inline: auto;
+  }
   .box {
      width: 25%;
      padding-bottom: 25%;
