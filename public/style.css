@@ -2008,14 +2008,31 @@ footer .footer-right iframe {
 		}
 
     p {
-      font-size: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .contact-icons {
+      color: var(--clr-primary-400);
+
+      a {
+        font-size: 24px;
+      }
     }
 	}
 
-	@media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 768px) {
 		
 		.contact {
 			aspect-ratio: 16/12;
+		}
+	}
+  @media screen and (max-width: 480px) {
+		
+		.contact {
+			aspect-ratio: 4/4;
 		}
 	}
 
