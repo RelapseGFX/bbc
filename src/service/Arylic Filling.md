@@ -14,4 +14,3 @@ price: €4.00
 duration: 2 hr
 ---
 Keep your acrylic nails flawless and strong with our expert filling service. Maintain your stunning acrylic nails with our expert filling service. Whether it's to fix growth gaps or to refresh your look, we ensure your acrylic nails remain beautiful, durable, and strong.
-

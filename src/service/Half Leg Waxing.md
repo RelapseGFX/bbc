@@ -14,4 +14,3 @@ price: €4.00
 duration: 2hr
 ---
 Perfectly smooth from knee to ankle with our efficient half-leg waxing service. For a more targeted approach, our half-leg waxing service removes hair from the knee down, giving you the smooth, flawless finish you desire. 
-

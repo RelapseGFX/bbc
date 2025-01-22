@@ -14,4 +14,3 @@ price: €4.00
 duration: 2 hr
 ---
 Target acne with our specialized D’Arsovnal treatment, using advanced techniques to reduce breakouts and promote clear, healthy skin. This treatment is ideal for those struggling with acne and looking to achieve a smoother, clearer complexion.
-

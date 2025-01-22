@@ -14,4 +14,3 @@ price: €4.00
 duration: 2 hr
 ---
 Combat the signs of aging with our vacuum therapy treatment, designed to stimulate circulation, promote collagen production, and enhance skin elasticity. This non-invasive treatment leaves your skin feeling firmer, smoother, and more youthful.
-

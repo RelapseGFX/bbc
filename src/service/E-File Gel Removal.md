@@ -14,4 +14,3 @@ price: €5.00
 duration: 2 hr
 ---
 Easily remove your gel polish with our safe, gentle gel removal service. This treatment ensures your nails remain healthy and strong, prepping them for your next manicure without causing damage or weakening your nails.
-

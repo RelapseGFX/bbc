@@ -14,4 +14,3 @@ price: €4.00
 duration: 2 hr
 ---
 Achieve beautiful, long-lasting nails with our acrylic manicure. Our acrylics provide a flawless finish that lasts. Perfect for any occasion, you'll have nails that stand out and stay strong.
-

@@ -14,4 +14,3 @@ price: 20.00€
 duration: 1 hr
 ---
 Indulge in the ultimate pampering experience with our full-body waxing service. From head to toe, we remove all unwanted hair for a perfectly smooth, hair-free finish. Enjoy weeks of silky, refreshed skin that feels smooth and radiant.
-

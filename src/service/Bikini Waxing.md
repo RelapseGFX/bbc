@@ -14,4 +14,3 @@ price: €5.00
 duration: 2 hr
 ---
 Feel confident and smooth with our professional bikini waxing service. We specialize in delivering a clean, precise bikini line that leaves you feeling refreshed and hair-free. Enjoy the convenience of longer-lasting results compared to shaving.
-

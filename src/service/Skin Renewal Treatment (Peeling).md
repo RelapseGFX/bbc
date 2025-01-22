@@ -14,4 +14,3 @@ price: €4.00
 duration: 2 hr
 ---
 Renew your skin with our skin renewal treatment that gently exfoliates dead skin cells, revealing a brighter, smoother complexion underneath. This treatment is perfect for those looking to refresh their skin and achieve a youthful, glowing appearance.
-

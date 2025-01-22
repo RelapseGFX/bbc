@@ -14,4 +14,3 @@ price: €4.00
 duration: 2 hr
 ---
 Get soft, hair-free arms that last longer than shaving with our gentle arm waxing. Remove unwanted hair and achieve smooth, soft arms with our precise waxing technique. Perfect for those who want long-lasting results and softer skin compared to shaving.
-

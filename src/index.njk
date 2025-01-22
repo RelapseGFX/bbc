@@ -77,21 +77,21 @@ nav: 'transparent-nav'
           </div>
           <div id="social-media" aria-labelledby="tab-2">
             <ul class="cards-wrapper">
-              {%- for post in collections.manicure -%}
+              {%- for post in collections.manicure | reverse -%}
                 {% include 'article-snippet.njk' %}
               {%- endfor %}
             </ul>
           </div>
           <div id="content-marketing" aria-labelledby="tab-3">
             <ul class="cards-wrapper">
-              {%- for post in collections.pedicure -%}
+              {%- for post in collections.pedicure | reverse -%}
                 {% include 'article-snippet.njk' %}
               {%- endfor %}
             </ul>
           </div>
           <div id="email" aria-labelledby="tab-4">
             <ul class="cards-wrapper">
-              {%- for post in collections.featuredFacetreatment -%}
+              {%- for post in collections.featuredFacetreatment | reverse -%}
                 {% include 'article-snippet.njk' %}
               {%- endfor %}
             </ul>

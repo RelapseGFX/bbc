@@ -14,4 +14,3 @@ price: €5.00
 duration: 2 hr
 ---
 Say goodbye to stubble and enjoy smooth, hair-free underarms with our waxing service. Treat yourself to smooth, silky underarms with our gentle and effective waxing. No more shaving irritation—just long-lasting smoothness and a fresh skin.
-
