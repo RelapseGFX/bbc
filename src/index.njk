@@ -70,7 +70,7 @@ nav: 'transparent-nav'
         <div class="tabs__panels flow">
           <div id="advertising" aria-labelledby="tab-1">
             <ul class="cards-wrapper">
-              {%- for post in collections.featured | reverse -%}
+              {%- for post in collections.featured -%}
                 {% include 'article-snippet.njk' %}
               {%- endfor %}
             </ul>
