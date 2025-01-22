@@ -14,3 +14,6 @@ price: €4.00
 duration: 2 hr
 ---
 Enjoy a relaxing, rejuvenating facial treatment with soothing vaporization that opens your pores and deep-cleanses your skin. This treatment refreshes and revitalizes your complexion, leaving you with a glowing, clear, and smooth face.
+
+
+

@@ -1,7 +1,7 @@
 ---
 title: Skin Renewal Treatment (Peeling)
 image: /assets/service/renewal-treatment.jpg
-tags: ["post", "facetreatment"]
+tags: ["post", "facetreatment", "featuredFacetreatment"]
 imageAlt: this is a test
 thubnail: /assets/thubnail-skin-renewal.jpg
 thunbnailAlt: this is a test

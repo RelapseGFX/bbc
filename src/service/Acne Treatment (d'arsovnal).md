@@ -1,7 +1,7 @@
 ---
 title: Acne Treatment (d'arsovnal)
 image: /assets/service/acne-treatment.jpg
-tags: ["post", "facetreatment", "featuredFacetreatment"]
+tags: ["post", "facetreatment"]
 imageAlt: this is a test
 thubnail: /assets/thubnail-acne-treatment.jpg
 thunbnailAlt: this is a test

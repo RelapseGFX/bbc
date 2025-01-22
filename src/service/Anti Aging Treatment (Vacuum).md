@@ -1,5 +1,5 @@
 ---
-title: Anti Agin Treatment (Vacuum)
+title: Anti Aging Treatment (Vacuum)
 image: /assets/service/aging-treatment.jpg
 tags: ["post", "facetreatment", "featuredFacetreatment"]
 imageAlt: this is a test
