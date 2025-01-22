@@ -1,6 +1,6 @@
 ---
 title: Crystal Nails
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+description: "The crystal nails are flawless—so sparkling and luxurious!"
 tags: "nails"
 image: /assets/nails-crystal.jpg
 imageAlt: Cute Crystal Nails

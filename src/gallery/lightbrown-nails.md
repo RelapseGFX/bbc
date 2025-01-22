@@ -1,6 +1,6 @@
 ---
 title: Lightbrown Nails
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+description: "The finish is flawless—my nails look so polished and chic!"
 tags: "nails"
 image: /assets/nails-lightbrown.jpg
 imageAlt: Cute Lightbrown Nails

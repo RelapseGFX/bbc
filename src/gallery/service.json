@@ -1,4 +1,4 @@
 {
     "tags": "post",
-    "layout": "gallery-article.njk"
+    "layout": "gallery-snippet.njk"
 }

@@ -1,7 +1,7 @@
 ---
 title: Green Nails
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+description: "The crystal-clear finish of these green nails is absolutely flawless!"
 tags: "nails"
-image: /assets/nails-green.jpg
+image: /assets/nails-fu.jpg
 imageAlt: Cute Green Nails
 ---

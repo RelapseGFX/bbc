@@ -1,6 +1,6 @@
 ---
 title: Pale Nails
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+description: "The smooth, glossy coat of these pale nails is perfection!"
 tags: "nails"
 image: /assets/nails-palepink.jpg
 imageAlt: Cute Pale Nails
